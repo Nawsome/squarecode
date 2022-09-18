@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Center the loader */
+#loader {
+ border: 0 solid transparent;
+ border-radius: 50%;
+ width: 100px;
+ height: 100px;
+}
+
+#loader:before,
+#loader:after {
+ content: '';
+ border: 7px solid #000000;
+ border-radius: 50%;
+ width: inherit;
+ height: inherit;
+ position: absolute;
+ animation: loader 2s linear infinite;
+ opacity: 0;
+}
+
+#loader:before {
+ animation-delay: 1s;
+}
+
+@-webkit-keyframes loader {
+  0% { -webkit-transform: scale(1); opacity: 0; }
+  50% { -webkit-opacity: 1; }
+  100% { -webkit-transform: scale(0); opacity: 0; }
+}
+
+@keyframes loader {
+ 0% {
+  transform: scale(1);
+  opacity: 0;
+ }
+
+ 50% {
+  opacity: 1;
+ }
+
+ 100% {
+  transform: scale(0);
+  opacity: 0;
+ }
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<iframe width="1446px" height="790px" src="https://totaljerkface.com/happy_wheels.tjf" title="1v1.lol" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
+</html>
+      <p><font face = "Copperplate" size = "4" color = "#000000">
+            ‎‎ ‎ ‎  Loading..
+         </font>
+      </p>
